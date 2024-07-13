@@ -8,7 +8,7 @@ from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
 labels = ["Привет", "Пока"]
 
 
-async def keyboard_reply():
+async def reply_keyboard():
     buttons = [KeyboardButton(text=label) for label in labels]
     keyboard = ReplyKeyboardMarkup(keyboard=[buttons], resize_keyboard=True)
     return keyboard
@@ -27,15 +27,10 @@ inline_keyboard_dynamic = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text="Показать больше", callback_data='options')],
 ])
 
-inline_keyboard_options = InlineKeyboardMarkup(inline_keyboard=[
-    [InlineKeyboardButton(text="Опция 1", callback_data='option_1')],
-    [InlineKeyboardButton(text="Опция 2", callback_data='option_2')],
-])
-
 options = [["Опция 1", "option_1"], ["Опция 2", "option_2"]]
 
 
-async def keyboard_inline():
+async def inline_keyboard_options():
     keyboard = InlineKeyboardBuilder()
     for option in options:
         keyboard.add(InlineKeyboardButton(text=option[0], callback_data=option[1]))
