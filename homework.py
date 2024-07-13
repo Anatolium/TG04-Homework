@@ -20,7 +20,7 @@ async def f_help(message: Message):
 # ----------------------------------- TG04-1. Создание простого меню с кнопками -----------------------------------
 @dp.message(CommandStart())
 async def start(message: Message):
-    await message.answer(f"Нажми на кнопку, {message.from_user.first_name}", reply_markup=await kb.keyboard_reply())
+    await message.answer(f"Нажми на кнопку, {message.from_user.first_name}", reply_markup=await kb.reply_keyboard())
 
 
 @dp.message(F.text == "Привет")
@@ -47,7 +47,7 @@ async def dynamic(message: Message):
 
 @dp.callback_query(F.data == 'options')
 async def options(callback: CallbackQuery):
-    await callback.message.answer('Показываю больше:', reply_markup=await kb.keyboard_inline())
+    await callback.message.answer('Показываю больше:', reply_markup=await kb.inline_keyboard_options())
 
 
 @dp.callback_query(F.data == 'option_1')
