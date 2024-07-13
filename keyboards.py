@@ -1,7 +1,6 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
 
-# -------------------------------------------------- TG04. Код урока --------------------------------------------------
 reply_keyboard_test = ReplyKeyboardMarkup(keyboard=[
     [KeyboardButton(text="Тестовая кнопка 1")],
     [KeyboardButton(text="Тестовая кнопка 2"),
