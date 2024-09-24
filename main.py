@@ -19,9 +19,9 @@ async def news(callback: CallbackQuery):
     await callback.message.edit_text('Вот свежие новости!', reply_markup=await kb.test_keyboard_inline())
 
 
-@dp.message(F.text == "Тестовая кнопка 1")
-async def test_button(message: Message):
-    await message.answer('Обработка нажатия на reply кнопку')
+# @dp.message(F.text == "Тестовая кнопка 1")
+# async def test_button(message: Message):
+#     await message.answer('Обработка нажатия на reply кнопку')
 
 
 @dp.message(CommandStart())

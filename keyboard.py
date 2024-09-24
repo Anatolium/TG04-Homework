@@ -15,8 +15,8 @@ async def reply_keyboard():
 
 inline_keyboard_urls = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text="Новости", url="https://mediametrics.ru/rating/hitech/ru/hour.html")],
-    [InlineKeyboardButton(text="Музыка", url="https://youtu.be/-GfaQzgnnDI?si=M9Q9o0H4LsjLbzTQ&t=11")],
-    [InlineKeyboardButton(text="Видео", url="https://youtube.com/shorts/4eNlzwOhH_w?si=7SYEl1-0FWAaundS")]
+    [InlineKeyboardButton(text="Музыка", url="https://rutube.ru/video/f566551c7672b10fe6f8150e299b7e58/")],
+    [InlineKeyboardButton(text="Видео", url="https://rutube.ru/video/f9434bca1781ea37cb42bcb9e489b454/")]
 ])
 
 # ----------------------------------- TG04-3. Динамическое изменение клавиатуры -----------------------------------
